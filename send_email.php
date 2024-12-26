@@ -3,9 +3,6 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require 'FT\phpmailer\PHPMailer';
-require 'FT\phpmailer\SMTP';
-require 'FT\phpmailer\Exception';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name']);
@@ -19,9 +16,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host = 'smtp.gmail.com'; // Set the SMTP server to send through
         $mail->SMTPAuth = true;
         $mail->Username = 'agarwalpackersmovers470@gmail.com'; // SMTP username
-        $mail->Password = 'eemo nuio sflq oxdp'; // SMTP password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 465;
+        $mail->Password = 'eemonuiosflqoxdp'; // SMTP password
+        $mail->SMTPSecure = 'tls';
+        $mail->Port = 587;
 
         $mail->setFrom('agarwalpackersmovers470@gmail.com', 'Mailer');
         $mail->addAddress('ajshivam80034@gmail.com', $name);
