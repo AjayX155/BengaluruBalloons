@@ -716,3 +716,16 @@
   
 </body>
 </html>
+<script>
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    alert('Warning: You are not allowed to copy or view content source');
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+      e.preventDefault();
+      alert('Warning: Copyright');
+    }
+  });
+</script>
