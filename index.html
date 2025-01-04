@@ -30,6 +30,23 @@
       e.preventDefault();
     });
   </script>
+	<!-- Event snippet for Contact conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(tel:+919535685166) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-11536431434/0cn2CPjYhoAaEMry__wq',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 </head>
 	<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11536431434"></script>
