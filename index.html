@@ -34,6 +34,15 @@
 	<!-- Event snippet for Contact conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11536431434"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11536431434');
+
 function gtag_report_conversion(tel:+919535685166) {
   var callback = function () {
     if (typeof(url) != 'undefined') {
@@ -46,20 +55,13 @@ function gtag_report_conversion(tel:+919535685166) {
   });
   return false;
 }
+	
 </script>
 
 </head>
 
 <body>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11536431434"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-11536431434');
-</script>
+	
   <!-- Header Section -->
   <header class="header">
     <div class="logo">
