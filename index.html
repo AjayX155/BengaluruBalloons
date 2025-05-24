@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const dateInput = document.getElementById('date');
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.setAttribute('min', today);
+  });
+</script>
 
 
 	<!-- Google tag (gtag.js) -->
